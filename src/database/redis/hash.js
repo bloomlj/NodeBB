@@ -14,7 +14,7 @@ module.exports = function (redisClient, module) {
 		}
 
 		Object.keys(data).forEach(function (key) {
-			if (data[key] === undefined) {
+			if (data[key] === undefined || data[key] === null) {
 				delete data[key];
 			}
 		});
@@ -26,6 +26,9 @@ module.exports = function (redisClient, module) {
 
 	module.setObjectField = function (key, field, value, callback) {
 		callback = callback || function () {};
+		if (!field) {
+			return callback();
+		}
 		redisClient.hset(key, field, value, function (err) {
 			callback(err);
 		});
@@ -129,6 +132,14 @@ module.exports = function (redisClient, module) {
 		if (!key || isNaN(value)) {
 			return callback(null, null);
 		}
-		redisClient.hincrby(key, field, value, callback);
+		if (Array.isArray(key)) {
+			var multi = redisClient.multi();
+			key.forEach(function (key) {
+				multi.hincrby(key, field, value);
+			});
+			multi.exec(callback);
+		} else {
+			redisClient.hincrby(key, field, value, callback);
+		}
 	};
 };

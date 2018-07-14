@@ -52,12 +52,12 @@
     "users": "Utilisateurs",
     "topics": "Sujets",
     "posts": "Messages",
-    "best": "Meilleurs",
+    "best": "Meilleur sujets",
     "votes": "Votes",
-    "upvoters": "Votes pour",
-    "upvoted": "Votes pour",
+    "upvoters": "Votes positifs",
+    "upvoted": "Vote(s) positif(s)",
     "downvoters": "Votes contre",
-    "downvoted": "Vote négatif",
+    "downvoted": "Vote(s) négatif(s)",
     "views": "Vues",
     "reputation": "Réputation",
     "read_more": "En lire plus",
@@ -97,6 +97,7 @@
     "enter_page_number": "Entrer un numéro de page",
     "upload_file": "Envoyer un fichier",
     "upload": "Envoyer",
+    "uploads": "Téléversements",
     "allowed-file-types": "Les types de fichiers autorisés sont : %1",
     "unsaved-changes": "Vous avez des modifications non sauvegardées. Êtes-vous sûr de vouloir naviguer tout de même ?",
     "reconnecting-message": "Il semble que votre connexion ait été perdue, veuillez patienter pendant que nous vous re-connectons.",
@@ -107,5 +108,5 @@
     "edited": "Modifié",
     "disabled": "Désactivé",
     "select": "Sélectionner",
-    "user-search-prompt": "Type something here to find users..."
+    "user-search-prompt": "Écrivez ici pour rechercher des utilisateurs ..."
 }

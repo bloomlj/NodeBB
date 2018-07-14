@@ -134,7 +134,7 @@ Digest.send = function (data, callback) {
 						});
 						emailsSent += 1;
 						emailer.send('digest', userObj.uid, {
-							subject: '[' + meta.config.title + '] [[email:digest.subject, ' + (now.getFullYear() + '/' + (now.getMonth() + 1) + '/' + now.getDate()) + ']]',
+							subject: '[[email:digest.subject, ' + (now.getFullYear() + '/' + (now.getMonth() + 1) + '/' + now.getDate()) + ']]',
 							username: userObj.username,
 							userslug: userObj.userslug,
 							notifications: notifications,
@@ -158,7 +158,13 @@ Digest.send = function (data, callback) {
 	function getTermTopics(term, uid, start, stop, callback) {
 		async.waterfall([
 			function (next) {
-				topics.getPopularTopics(term, uid, start, stop, next);
+				topics.getSortedTopics({
+					uid: uid,
+					start: start,
+					stop: stop,
+					term: term,
+					sort: 'posts',
+				}, next);
 			},
 			function (data, next) {
 				if (!data.topics.length) {

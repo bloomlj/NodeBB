@@ -251,14 +251,14 @@ module.exports = function (middleware) {
 
 				data.templateValues.useCustomJS = parseInt(meta.config.useCustomJS, 10) === 1;
 				data.templateValues.customJS = data.templateValues.useCustomJS ? meta.config.customJS : '';
-
+				data.templateValues.isSpider = req.isSpider();
 				req.app.render('footer', data.templateValues, next);
 			},
 		], callback);
 	};
 
 	function modifyTitle(obj) {
-		var title = controllers.helpers.buildTitle('[[pages:home]]');
+		var title = controllers.helpers.buildTitle(meta.config.homePageTitle || '[[pages:home]]');
 		obj.browserTitle = title;
 
 		if (obj.metaTags) {

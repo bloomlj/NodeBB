@@ -97,6 +97,7 @@
     "enter_page_number": "Sayfa numarasını girin",
     "upload_file": "Dosya yükle",
     "upload": "Yükle",
+    "uploads": "Yüklemeler",
     "allowed-file-types": "İzin verilen dosya tipleri %1",
     "unsaved-changes": "Kaydedilmemiş değişiklikler var. Çıkmak istediğinize emin misiniz?",
     "reconnecting-message": "%1 ile bağlantınız koptu, yeniden bağlanmak için lütfen bekleyiniz.",
@@ -107,5 +108,5 @@
     "edited": "Düzenlendi",
     "disabled": "Devre dışı",
     "select": "Seç",
-    "user-search-prompt": "Type something here to find users..."
+    "user-search-prompt": "Kullanıcı bulmak için buraya bir şeyler yazın ..."
 }

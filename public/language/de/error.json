@@ -18,6 +18,7 @@
     "invalid-username-or-password": "Bitte gib sowohl einen Benutzernamen als auch ein Passwort an",
     "invalid-search-term": "Ungültige Suchanfrage",
     "invalid-url": "Ungültige URL",
+    "local-login-disabled": "Lokales Login System wurde für nicht-priviligierte Accounts deaktiviert.",
     "csrf-invalid": "Dein Login war nicht erfolgreich da wahrscheinlich deine Sitzung abgelaufen ist. Bitte versuche es noch einmal",
     "invalid-pagination-value": "Ungültige Seitennummerierung, muss mindestens %1 und maximal %2 sein",
     "username-taken": "Der Benutzername ist bereits vergeben",
@@ -116,8 +117,8 @@
     "cant-delete-chat-message": "Du darfst diese Nachricht nicht löschen",
     "chat-edit-duration-expired": "Du darfst Chat-Nachrichten nur bis zu %1 Sekunde(n) nach der erstellung verändern",
     "chat-delete-duration-expired": "Du darfst Chat-Nachrichten nur bis zu %1 Sekunde(n) nach der erstellung löschen",
-    "chat-deleted-already": "This chat message has already been deleted.",
-    "chat-restored'already": "This chat message has already been restored.",
+    "chat-deleted-already": "Diese Chatnachricht wurde bereits gelöscht.",
+    "chat-restored'already": "Diese Chatnachricht wurde bereits Wiederhergestellt.",
     "already-voting-for-this-post": "Du hast diesen Beitrag bereits bewertet.",
     "reputation-system-disabled": "Das Reputationssystem ist deaktiviert.",
     "downvoting-disabled": "Downvotes sind deaktiviert.",
@@ -126,6 +127,8 @@
     "not-enough-reputation-min-rep-website": "Deine Reputation um eine \"Website\" zum Benutzerprofil hinzuzufügen ist zu niedrig",
     "not-enough-reputation-min-rep-aboutme": "Deine Reputation um eine \"Über mich\"-Sektion zum Benutzerprofil hinzuzufügen ist zu niedrig",
     "not-enough-reputation-min-rep-signature": "Deine Reputation um eine \"Signatur\" zum Benutzerprofil hinzuzufügen ist zu niedrig",
+    "not-enough-reputation-min-rep-profile-picture": "Deine Reputation ist zu niedrig um ein Profilbild hinzuzufügen.",
+    "not-enough-reputation-min-rep-cover-picture": "Deine Reputation ist zu niedrig um ein Deckbild hinzuzufügen.",
     "already-flagged": "Du hast diesen Beitrag bereits gemeldet",
     "self-vote": "Du kannst deine eigenen Beiträge nicht bewerten",
     "reload-failed": "Es ist ein Problem während des Reloads von NodeBB aufgetreten: \"%1\". NodeBB wird weiterhin clientseitige Assets bereitstellen, allerdings solltest du das, was du vor dem Reload gemacht hast, rückgängig machen.",
@@ -144,5 +147,9 @@
     "invalid-home-page-route": "Ungültiger Startseitenpfad",
     "invalid-session": "Sitzungsdiskrepanz",
     "invalid-session-text": "Es scheint als wäre deine Login-Sitzung nicht mehr aktiv oder sie passt nicht mehr mit der des Servers. Bitte aktualisiere diese Seite.",
-    "no-topics-selected": "Keine Beiträge ausgewählt!"
+    "no-topics-selected": "Keine Beiträge ausgewählt!",
+    "cant-move-to-same-topic": "Du kannst den Beitrag nicht in das selbe Thema schieben!",
+    "cannot-block-self": "Du kannst dich nicht selbst blocken!",
+    "cannot-block-privileged": "Du kannst keine Administratoren bzw. Globale Moderatoren blocken.",
+    "no-connection": "Es scheint als gäbe es ein Problem mit deiner Internetverbindung"
 }
